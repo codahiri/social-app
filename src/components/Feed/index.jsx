@@ -1,4 +1,4 @@
-import React from 'react'
+import Posts from '../Posts'
 import Share from '../Share'
 import './feed.css'
 
@@ -7,6 +7,12 @@ const Feed = () => {
     <div className='feed'>
       <div className="feedWrapper">
         <Share />
+        <Posts />
+        <Posts />
+        <Posts />
+        <Posts />
+        <Posts />
+        <Posts />
       </div>
     </div>
   )
