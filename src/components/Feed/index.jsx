@@ -1,5 +1,6 @@
-import Posts from '../Posts'
+import Post from '../Post'
 import Share from '../Share'
+import { Posts } from '../../dumpyData'
 import './feed.css'
 
 const Feed = () => {
@@ -7,12 +8,9 @@ const Feed = () => {
     <div className='feed'>
       <div className="feedWrapper">
         <Share />
-        <Posts />
-        <Posts />
-        <Posts />
-        <Posts />
-        <Posts />
-        <Posts />
+        {Posts.map(p => (
+          <Post key={p.id} post={p} />
+        ))}
       </div>
     </div>
   )

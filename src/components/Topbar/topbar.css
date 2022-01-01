@@ -4,8 +4,9 @@
   height: 50px;
   width: 100%;
   background-color: #1872f2;
-  position: static;
+  position: sticky;
   top: 0;
+  z-index: 999;
 }
 
 /* TopBar Left */
